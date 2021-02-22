@@ -1,1 +1,3 @@
-Now we're going to wire up our Scoreboard container to Redux! We'll use a react-redux helper method called connect to subscribe to specific reducer changes, then inject those state changes as props into our app container.
+In this section, we'll update the Player, Counter and Header components to use Redux. 
+
+This will involve updating propTypes as needed, and making sure we wire up our event handlers to the proper action creator methods.
