@@ -1,1 +1,3 @@
-The next component we are going to migrate is AddPlayerForm, which is another logical component, similar to our Stopwatch component.
+It's time to work our way up the component tree and move onto the next set of components. 
+
+In this section, we'll move the Player and Header pure components out of Scoreboard.js and into their own respective files.
