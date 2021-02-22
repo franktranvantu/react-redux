@@ -1,3 +1,3 @@
-In this section, we're going to move the Stopwatch component out of the Scoreboard.js file and into its own file. 
+In this section, we're going to build the next set of components for our app – the stats and counter components. 
 
-In addition, we'll also apply some ES2015 syntactic sugar to make our component declaration and implementation more concise.
+Both are pure (or stateless) components, so they will be easier and faster to implement.
