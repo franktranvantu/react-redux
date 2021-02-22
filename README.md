@@ -1,3 +1,3 @@
-We’ve gone from defining our action types to building our reducer, so the next step is to provide a mechanism for notifying our reducer when an action takes place. 
+In this section, we'll dive into creating the store that will house our application state. 
 
-This is done using actions, action creators and dispatch.
+In the scoreboard application, this means registering the combined Player and Stopwatch reducers to the Redux store and providing that store to our app's container component.
