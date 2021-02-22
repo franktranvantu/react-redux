@@ -1,1 +1,3 @@
-In this section, we're going to add Redux and React-Redux dev dependencies to our Scoreboard app, using npm.
+In this section, we'll create an index.js file that will act as the entry point for the application. 
+
+We'll also turn the app.js file from the React Basics course into a Scoreboard component that will be exported as a module.
