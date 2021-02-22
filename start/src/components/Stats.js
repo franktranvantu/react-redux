@@ -1,10 +1,11 @@
 import React, {PropTypes} from 'react';
 
-Stats.propTypes = {
-  players: PropTypes.array.isRequired,
-};
-
 const Stats = props => {
+  const playerCount = props.players.length;
+  const totalPoints = props.players.reduce(function(total, player) {
+    return total + player.score;
+  }, 0);
+
   return (
     <table className="stats">
       <tbody>
@@ -20,5 +21,9 @@ const Stats = props => {
     </table>
   );
 }
+
+Stats.propTypes = {
+  players: PropTypes.array.isRequired,
+};
 
 export default Stats;
