@@ -1,3 +1,1 @@
-In this section, we'll dive into creating the store that will house our application state. 
-
-In the scoreboard application, this means registering the combined Player and Stopwatch reducers to the Redux store and providing that store to our app's container component.
+Now we're going to wire up our Scoreboard container to Redux! We'll use a react-redux helper method called connect to subscribe to specific reducer changes, then inject those state changes as props into our app container.
