@@ -3,7 +3,7 @@ import Stats from "./Stats";
 import Stopwatch from "./Stopwatch";
 
 Header.propTypes = {
-  players: React.PropTypes.array.isRequired,
+  players: PropTypes.array.isRequired,
 };
 
 const Header = props => {

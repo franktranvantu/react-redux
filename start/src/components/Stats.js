@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 
 Stats.propTypes = {
-  players: React.PropTypes.array.isRequired,
+  players: PropTypes.array.isRequired,
 };
 
 const Stats = props => {
