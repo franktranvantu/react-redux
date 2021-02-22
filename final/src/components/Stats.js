@@ -1,9 +1,5 @@
 import React, {PropTypes} from 'react';
 
-Stats.propTypes = {
-  players: React.PropTypes.array.isRequired,
-};
-
 const Stats = props => {
   return (
     <table className="stats">
@@ -20,5 +16,9 @@ const Stats = props => {
     </table>
   );
 }
+
+Stats.propTypes = {
+  players: PropTypes.array.isRequired,
+};
 
 export default Stats;
