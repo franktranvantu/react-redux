@@ -1,7 +1,7 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 
 class AddPlayerForm extends Component {
-  static propTypes: {
+  static propTypes = {
     onAdd: React.PropTypes.func.isRequired,
   };
 
