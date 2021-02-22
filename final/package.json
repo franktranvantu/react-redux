@@ -19,7 +19,7 @@
   "dependencies": {
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
-    "react-redux": "^7.2.2",
+    "react-redux": "^5.0.7",
     "redux": "^4.0.5"
   },
   "devDependencies": {
