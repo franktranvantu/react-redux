@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React, { Component, PropTypes } from 'react';
 
-class Stopwatch extends Component {
+export default class Stopwatch extends Component {
   state = {
     running: false,
     previouseTime: 0,
-    elapsedTime: 0
+    elapsedTime: 0,
   };
 
   componentDidMount() {
@@ -20,20 +20,20 @@ class Stopwatch extends Component {
       running: true,
       previousTime: Date.now(),
     });
-  }
+  };
 
   onStop = () => {
     this.setState({
       running: false,
     });
-  }
+  };
 
   onReset = () => {
     this.setState({
       elapsedTime: 0,
       previousTime: Date.now(),
     });
-  }
+  };
 
   onTick = () => {
     if (this.state.running) {
@@ -43,10 +43,10 @@ class Stopwatch extends Component {
         previousTime: Date.now(),
       });
     }
-  }
+  };
 
   render() {
-    var seconds = Math.floor(this.state.elapsedTime / 1000);
+    const seconds = Math.floor(this.state.elapsedTime / 1000);
     return (
       <div className="stopwatch" >
         <h2>Stopwatch</h2>
@@ -58,8 +58,6 @@ class Stopwatch extends Component {
         }
         <button onClick={this.onReset}>Reset</button>
       </div>
-    )
+    );
   }
 }
-
-export default Stopwatch;
